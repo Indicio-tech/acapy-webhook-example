@@ -10,6 +10,11 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.7"
+fastapi = "^0.75.1"
+uvicorn = {version = "^0.17.6", optional = true}
+
+[tool.poetry.extras]
+server = ["uvicorn"]
 
 [tool.poetry.dev-dependencies]
 black = "^22.3.0"
