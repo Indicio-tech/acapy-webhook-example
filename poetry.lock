@@ -396,7 +396,7 @@ server = ["uvicorn"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "3f71ad7395a84bc37b4c5bd1fb889ce2c050a388053b8d71e3459fd886293dec"
+content-hash = "ddb1abed1311d1ec9e8b5bd2296841ea0ec042db1c3d78abafc405ed5e15f737"
 
 [metadata.files]
 anyio = [
