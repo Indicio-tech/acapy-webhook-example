@@ -390,10 +390,13 @@ python-versions = ">=3.7"
 docs = ["sphinx", "jaraco.packaging (>=9)", "rst.linker (>=1.9)"]
 testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy (>=0.9.1)"]
 
+[extras]
+server = ["uvicorn"]
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "139c269c3a53df45b3d967cde45406e70bdb6f45deb90f00db37841e3437484c"
+content-hash = "3f71ad7395a84bc37b4c5bd1fb889ce2c050a388053b8d71e3459fd886293dec"
 
 [metadata.files]
 anyio = [
