@@ -9,7 +9,7 @@ WAIT_ATTEMPTS=${WAIT_ATTEMPTS:-10}
 
 IMAGE="acapy-webhook"
 NAME="acapy-webhook-$(env LC_ALL=C tr -dc 'a-zA-Z0-9' < /dev/urandom | fold -w 16 | head -n 1)"
-URL="http://localhost:8080/openapi.json"
+URL="http://${DOCKER_CONTAINER_HOST:-localhost}:8080/openapi.json"
 
 ${CONTAINER_RUNTIME} build -t ${IMAGE} ..
 ${CONTAINER_RUNTIME} run --rm -d --name "${NAME}" -p 8080:80 ${IMAGE}
