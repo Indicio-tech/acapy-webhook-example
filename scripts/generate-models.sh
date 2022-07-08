@@ -5,7 +5,7 @@ cd "$(dirname "$0")" || exit
 
 CONTAINER_RUNTIME=${CONTAINER_RUNTIME:-docker}
 NAME="datamodel-codegen"
-API_URL="https://raw.githubusercontent.com/Indicio-tech/acapy-openapi/update/ACA-Py-0.7.4/openapi.yml"
+API_URL="https://raw.githubusercontent.com/Indicio-tech/acapy-openapi/0.7.4/openapi.yml"
 
 ${CONTAINER_RUNTIME} build -t ${NAME} - << DOCKERFILE
 FROM python:3.7
